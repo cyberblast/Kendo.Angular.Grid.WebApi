@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A6DC882B-1787-49EE-9435-70FFC25ED5CB}</ProjectGuid>
+    <ProjectGuid>{B5D8C071-0202-4A45-84A6-5C458ACC58C5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>cyberblast.Kendo.Angular.Grid.WebApi</RootNamespace>
-    <AssemblyName>cyberblast.Kendo.Angular.Grid.WebApi</AssemblyName>
+    <RootNamespace>cyberblast.Kendo.Angular.Grid.Model</RootNamespace>
+    <AssemblyName>cyberblast.Kendo.Angular.Grid.Model</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -44,15 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FilterMap.cs" />
-    <Compile Include="IKendoServiceController.cs" />
+    <Compile Include="CompositeFilterDescriptor.cs" />
+    <Compile Include="FilterDescriptor.cs" />
+    <Compile Include="KendoServiceResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\cyberblast.Kendo.Angular.Grid.Model\cyberblast.Kendo.Angular.Grid.Model.csproj">
-      <Project>{b5d8c071-0202-4a45-84a6-5c458acc58c5}</Project>
-      <Name>cyberblast.Kendo.Angular.Grid.Model</Name>
-    </ProjectReference>
+    <Compile Include="SortDescriptor.cs" />
+    <Compile Include="StateQuery.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
