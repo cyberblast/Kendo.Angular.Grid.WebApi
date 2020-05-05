@@ -1,21 +1,16 @@
-﻿using cyberblast.Kendo.Angular.Grid.WebApi.Model;
+﻿using cyberblast.Kendo.Angular.Grid.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace cyberblast.Kendo.Angular.Grid.EntityFramework {
     public abstract class CrudRepository<TContext, TEntity, TId>
         where TContext : DbContext, new()
         where TEntity : class, IGenericEntity<TId> {
-
-        public CrudRepository(DbContext context) {
-
-        }
 
         protected static void OnDb(Action<TContext, DbSet<TEntity>> handler) {
             using (var context = new TContext()) {

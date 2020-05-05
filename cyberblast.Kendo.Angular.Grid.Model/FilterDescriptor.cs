@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace cyberblast.Kendo.Angular.Grid.WebApi.Model 
+namespace cyberblast.Kendo.Angular.Grid.Model 
 {
     public class FilterDescriptor
     {

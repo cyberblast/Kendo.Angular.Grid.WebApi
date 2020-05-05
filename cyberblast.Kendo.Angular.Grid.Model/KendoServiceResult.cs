@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace cyberblast.Kendo.Angular.Grid.WebApi.Model {
+namespace cyberblast.Kendo.Angular.Grid.Model {
     public class KendoServiceResult<TModel>
         where TModel : class, new()
     {

@@ -1,4 +1,4 @@
-﻿using cyberblast.Kendo.Angular.Grid.WebApi.Model;
+﻿using cyberblast.Kendo.Angular.Grid.Model;
 
 namespace cyberblast.Kendo.Angular.Grid.WebApi {
     public interface IKendoServiceController<TModel>
